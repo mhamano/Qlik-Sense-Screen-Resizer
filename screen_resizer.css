@@ -1,0 +1,92 @@
+/* CSS */
+/* Button design */
+.resize_grid_btn {
+	font-size:14px;
+	font-family:Arial;
+	font-weight:normal;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	border:1px solid #83c41a;
+	padding:7px 14px;
+	text-decoration:none;
+	background:-moz-linear-gradient( center top, #9dce2c 5%, #8cb82b 100% );
+	background:-ms-linear-gradient( top, #9dce2c 5%, #8cb82b 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#9dce2c', endColorstr='#8cb82b');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #9dce2c), color-stop(100%, #8cb82b) );
+	background-color:#9dce2c;
+	color:#ffffff;
+	display:inline-block;
+}
+
+.resize_grid_btn:hover {
+	background:-moz-linear-gradient( center top, #8cb82b 5%, #9dce2c 100% );
+	background:-ms-linear-gradient( top, #8cb82b 5%, #9dce2c 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#8cb82b', endColorstr='#9dce2c');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #8cb82b), color-stop(100%, #9dce2c) );
+	background-color:#8cb82b;
+}
+
+.resize_grid_btn:active {
+	position:relative;
+	top:1px;
+}
+
+@media screen and (min-width: 640px) {
+
+	/* Design zoomed charts */
+	div#grid.ng-isolate-scope.grid-cell-zoomed {
+		position: fixed;
+		top: 130px;
+		bottom: 20px;
+		margin-right: 20px;
+		margin-left: 20px;
+		height: calc(100vh - 140px);
+		height: -o-calc(100vh - 140px); /* opera */
+		height: -webkit-calc(100vh - 200px); /* google, safari */
+		height: -moz-calc(100vh - 140px); /* firefox */
+	}
+
+	/* Center: Panel Content */
+	 div.qv-panel-content.flex-row {
+	 	overflow: auto;
+	 	-webkit-overflow-scrolling
+	 }
+
+	/* Left: Panel Assets */
+	div.qv-panel-assets.ng-scope.ng-isolate-scope {
+		height: 100%;
+	}
+
+	/* Left: Button Panel */
+	#assets-button-panel {
+		position: fixed;
+		top: 43.9931px;
+		width: 200px;
+	}
+
+	/* Left: Tab Container */
+	#assets-tab-container {
+		position: fixed;
+		top: 79.9827px;
+		width: 200px;
+		bottom: 37.2222px;
+	}
+
+	/* Right: Property Header */
+	div.property-header {
+		position: fixed;
+		top: 43.9931px;
+		width: 251.111px;
+	}
+
+	/* Right: Property Content */
+	div.property-content.ng-scope.ng-isolate-scope{
+		top: 43.9861px;
+		bottom: 37.2222px;
+		position: fixed;
+		margin-right: 20px;
+		width: 251.111px;
+		height: auto;
+	}
+}

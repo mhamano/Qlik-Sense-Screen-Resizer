@@ -1,0 +1,16 @@
+{
+	"name": "Screen Resizer",
+	"description": "",
+	"type": "visualization",
+	"version": "1.0.0",
+	"icon": "cogwheel",
+	"preview": "preview.png",
+	"author": "Masaki Hamano",
+	"homepage": "",
+	"keywords": "qlik-sense, visualization",
+	"license": "",
+	"repository": "",
+	"dependencies": {
+		"qlik-sense": ">=1.0.x"
+	}
+}
