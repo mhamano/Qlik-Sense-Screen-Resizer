@@ -35,4 +35,4 @@ The software is provided "AS IS" without warranty of any kind. This project is l
 ## Author
 Masaki Hamano
 
-The codes of resizing grid is based on (https://github.com/ludberg/xGridResizer "xGridResizer@ludberg").
+The codes of resizing grid is based on [xGridResizer@ludberg]( https://github.com/ludberg/xGridResizer "xGridResizer@ludberg").
