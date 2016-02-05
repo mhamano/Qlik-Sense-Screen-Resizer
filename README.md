@@ -15,7 +15,7 @@ Please refer to the following instruction for importing an extension:
 
 	[Import Extension]( http://help.qlik.com/sense/en-US/online/#../Subsystems/ManagementConsole/Content/QMC_Resources_Extensions_AddingExtensions.htm?Highlight=add extension "Import Extension")
 
-Remove "images", "preview.png" and "README.md" before importing the extension.
+Remove "images", "preview.png", "README.md" and other git related files before importing the extension.
 
 ## Usage
 1. Open a Qlik Sense App.
