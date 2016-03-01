@@ -19,11 +19,11 @@ Remove "images", "preview.png", "README.md" and other git related files before i
 
 ## Usage
 1. Open a Qlik Sense App.
-2. Drag and drop the "Screen Resizer" extention onto the canvas.
-3. On the extension property, nagivate to Settings>Properties and change the "Screen Height (%)". The change of the screen size is applied immediately by pressing the ENTER key.
+2. Drag and drop the "Screen Resizer" extension onto the canvas.
+3. On the extension property, navigate to Settings>Properties and change the "Screen Height (%)". The change of the screen size is applied immediately by pressing the ENTER key.
 4. To change the grid size, change the "Number of Rows" and "Number of Columns".
-5. Press "Resize Grid" botton on the extension placed on the canvas. This would apply the change of the grid size. 
-6. Nagivate to Settings>Style and swith off "Show 'Resize Grid' Botton". This option hides the botton on the extension and shows the text entered in "Text(Displayed when the button is hidden)" box. You can use this option to keep the consistency of the sheet design.
+5. Press "Resize Grid" button on the extension placed on the canvas. This would apply the change of the grid size. 
+6. Navigate to Settings>Style and swith off "Show 'Resize Grid' Button". This option hides the button on the extension and shows the text entered in "Text(Displayed when the button is hidden)" box. You can use this option to keep the consistency of the sheet design.
 
 ## Known Limitations
 - Resizing the charts objects to fit them to the screen size might not work when the Screen Resizer extension is placed on other place than the top of the sheet. 
