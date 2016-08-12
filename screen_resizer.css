@@ -61,16 +61,22 @@
 	/* Left: Button Panel */
 	#assets-button-panel {
 		position: fixed;
-		top: 43.9931px;
-		width: 200px;
+		width: 46px;
+		top: 44px;
+		bottom: 37px;
 	}
 
 	/* Left: Tab Container */
 	#assets-tab-container {
 		position: fixed;
-		top: 79.9827px;
+		left: 46px;
 		width: 200px;
 		bottom: 37.2222px;
+	}
+
+	/* Left: Hide Tab Container when collapsed */
+	div.qv-panel-assets-collapsed section#assets-tab-container {
+		display: none;
 	}
 
 	/* Right: Property Header */

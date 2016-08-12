@@ -1,5 +1,5 @@
 define( [
-		"qlik" 
+		"qlik"
 		,"./properties"
 		,"text!./screen_resizer.css"
 ],
@@ -11,7 +11,7 @@ function ( qlik, props, cssContent) {
   	var sheetId = qlik.navigation.getCurrentSheetId().sheetId;
 
   	function resizeGrid(rows, cols) {
-		
+
 			app.getObject(sheetId).then(function(obj) {
 		  	obj.applyPatches([{
 					qOp: 'replace',
@@ -21,23 +21,23 @@ function ( qlik, props, cssContent) {
 				{
 					qPath : '/rows',
 					qOp : 'replace',
-					qValue : '"'+rows+'"' 
-				}		 
-				],false);  
-			
+					qValue : '"'+rows+'"'
+				}
+				],false);
+
 		}).then(function() {
 			app.doSave();
 		});
-  	} 
-  
+  	}
+
 	return {
 		initialProperties : {
 			version : 1.0
 		},
 	  	definition: ( props )
 	  	,
-		paint: function ($element, layout) { 
-			
+		paint: function ($element, layout) {
+
 		  	var html = "";
 
 		  	//Check if Button is to be shown or hidden
@@ -48,18 +48,18 @@ function ( qlik, props, cssContent) {
 		  	}
 
 			if (window.matchMedia('screen and (min-width:640px)').matches) {
-	 
+
 			 	//Center: Panel Content
 			  	$('div.qv-panel-content.flex-row').css('height',layout.height+"%");
-	  
+
 			  	//Center: Panel Sheet
-			  	$('div.qvt-sheet.qv-panel-sheet.ng-scope.ng-isolate-scope').css('height',layout.height+"%");	
+			  	$('div.qvt-sheet.qv-panel-sheet.ng-scope.ng-isolate-scope').css('height',layout.height+"%");
 
 			  	//Left: Tab Container
-			  	$('#assets-tab-container').css('top','79.9827px');
+			  	$('#assets-tab-container').css('top','44px');
 
 		 	 	//Right: Panel Properties
-			  	$('div.qv-panel-properties.ng-scope.ng-isolate-scope').css('height',layout.height+"%"); 
+			  	$('div.qv-panel-properties.ng-scope.ng-isolate-scope').css('height',layout.height+"%");
 
 			  	//Right: Property Header
 			  	$('div.property-header').css('position','fixed');
@@ -89,4 +89,3 @@ function ( qlik, props, cssContent) {
 		}
 	};
 } );
-
