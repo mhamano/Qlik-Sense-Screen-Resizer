@@ -49,7 +49,10 @@ function ( qlik, props, cssContent) {
 
 			if (window.matchMedia('screen and (min-width:640px)').matches) {
 
-			 	//Center: Panel Content
+					$('div.qvt-sheet-container').css('height',layout.height+"%");
+					$('div.qv-panel-properties.ng-scope').css('height',layout.height+"%");
+
+			 		//Center: Panel Content
 			  	$('div.qv-panel-content.flex-row').css('height',layout.height+"%");
 
 			  	//Center: Panel Sheet
@@ -58,7 +61,7 @@ function ( qlik, props, cssContent) {
 			  	//Left: Tab Container
 			  	$('#assets-tab-container').css('top','44px');
 
-		 	 	//Right: Panel Properties
+		 	 		//Right: Panel Properties
 			  	$('div.qv-panel-properties.ng-scope.ng-isolate-scope').css('height',layout.height+"%");
 
 			  	//Right: Property Header
