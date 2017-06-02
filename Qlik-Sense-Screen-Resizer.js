@@ -49,6 +49,7 @@ function ( qlik, props, cssContent) {
 
 			if (window.matchMedia('screen and (min-width:640px)').matches) {
 
+					// Fixed to work on QS3.2SR4
 					$('div.qvt-sheet-container').css('height',layout.height+"%");
 					$('div.qv-panel-properties.ng-scope').css('height',layout.height+"%");
 
